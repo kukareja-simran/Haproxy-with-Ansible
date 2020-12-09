@@ -1,0 +1,10 @@
+---
+# handlers file for 
+- name: start service
+  service:
+          name: "httpd"
+          state: restarted
+  register: z
+- debug:
+        var: z
+
